@@ -1,0 +1,87 @@
+/*Whubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,
+Bootstrap which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser 
+supported, best quality world class designs.*/
+body{
+margin: 0px;
+padding: 0px;
+background: #DAF7A6;
+}
+h1{
+text-align: center;
+color: #C70039;
+}
+
+.w3hubs
+{
+
+
+transform: rotateY(180deg);
+display: flex;
+}
+.w3hubs input{
+display: none;
+}
+.w3hubs label
+{
+display: block;
+cursor: pointer;
+width: 20px;
+}
+.w3hubs label:before
+{
+content: '\f005';
+font-family:  fontAwesome;
+display: block;
+font-size: 20px;
+color: #101010;
+}
+.w3hubs label:after
+{
+content: '\f005';
+font-family:  fontAwesome;
+position: absolute;
+display: block;
+font-size: 20px;
+color: #2E86C1;
+top: 0;
+opacity: 0;
+transition: .5s;
+text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.w3hubs label:hover:after,
+.w3hubs label:hover ~ label:after,
+.w3hubs input:checked ~ label:after
+{
+opacity: 1;
+}
+
+@media(max-width: 502px)
+{
+.w3hubs label{
+width: 10px;
+}
+.w3hubs label:before
+{	
+font-size: 10px;	
+}
+.w3hubs label:after
+{	
+font-size: 10px;
+}
+}
+
+@media(max-width: 407px)
+{
+.w3hubs label{
+width: 10px;
+}
+.w3hubs label:before
+{	
+font-size: 10px;	
+}
+.w3hubs label:after
+{	
+font-size: 10px;
+}
+
+}

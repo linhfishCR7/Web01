@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CART</title>
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="../assets/img/logo-icon/icon.jpg" type="text/css">
+    <link rel="stylesheet" href="../vendor/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/Bootstrap.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<style>
+    /*div{
+        border: 1px solid red;
+    }*/
+    body {
+        background-image: url('../assets/img/background/background9.jpg');
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+
+    .logo-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .banner-img {
+        height: 200px;
+
+    }
+
+
+    .card-img {
+        height: 250px;
+    }
+
+    .icon-font {
+        size: 80px;
+        color: brown;
+    }
+
+    .animate-text {
+        color: rgb(138, 9, 230);
+    }
+
+    h2 {
+        color: lawngreen;
+    }
+
+    .position-button-call1 {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px 80px 80px 80px;
+        position: fixed;
+        top: 100px;
+        left: 30px;
+
+
+    }
+
+    .position-button-call1 a {
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .position-button-call2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px 80px 80px 80px;
+        position: fixed;
+        top: 180px;
+        left: 30px;
+
+    }
+
+    .position-button-call2 a {
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .phone-icon {
+        color: blue;
+        size: 100px;
+    }
+
+    .navbar-position {
+        position: fixed;
+    }
+
+    .row-banner-text {
+        color: blueviolet;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .row-banner-text-danhmuc {
+
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .banner-img {
+        width: 1000px;
+        height: 150px;
+    }
+
+    .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+        position: fixed;
+    }
+
+    .top-contact {
+        margin-top: 100px;
+    }
+
+
+    img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    .img-size{
+        width: 350px;
+        height: 250px;
+    }
+</style>
+
+<body>
+    <!-- thanh navbar -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark affix">
+        <a class="navbar-brand" href="https://cr7fans1009.blogspot.com/">CR7</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../pages/San-pham.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../pages/pages-product/San-pham-THUC_AN.html">Thức ăn</a>
+                        <a class="dropdown-item" href="../pages/pages-product/San-pham-VOT.html">Vợt</a>
+                        <a class="dropdown-item" href="../pages/pages-product/San-pham-BE.html">Bể</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="../pages/pages-product/pages-product-betta/San-pham-BETA-KOI1.html">BETTA</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/contact.html" tabindex="-1" aria-disabled="true">Liên hệ</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" method="get" action="../pages/search.html">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="../pages/cart.html">Giỏ hàng</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <!-- Nếu chưa đăng nhập thì hiển thị nút Đăng nhập -->
+                    <a class="nav-link" href="../pages/Sing-in.html">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <div class="container mt-4">
+            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <h1 class="text-center  top-contact">Giỏ hàng</h1>
+            <div class="row">
+                <div class="col col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Ảnh đại diện</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Thành tiền</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="datarow">
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="../assets/img/betta/betafish1.png" class="hinhdaidien img-size">
+                                </td>
+                                <td>PENSY BETTA MINI-XANH</td>
+                                <td>2</td>
+                                <td>150.000</td>
+                                <td>300.000</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                    <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <img src="../assets/img/betta/betafish6.png" class="hinhdaidien img-size">
+                                </td>
+                                <td>PENSY BETTA MINI-CAM</td>
+                                <td>4</td>
+                                <td>125.000</td>
+                                <td>500.000</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                    <a id="delete_2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <img src="../assets/img/betta/betafish8.png" class="hinhdaidien img-size">
+                                </td>
+                                <td>PENSY BETTA XANH-RED</td>
+                                <td>8</td>
+                                <td>100.000</td>
+                                <td>800.000</td>
+                                <td>
+                                    <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                    <a id="delete_3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
+                                        <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <a href="../index.html" class="btn btn-warning btn-md"><i class="fa fa-arrow-left"
+                            aria-hidden="true"></i>&nbsp;Quay
+                        về trang chủ</a>
+                    <a href="checkout.html" class="btn btn-primary btn-md"><i class="fa fa-shopping-cart"
+                            aria-hidden="true"></i>&nbsp;Thanh toán</a>
+                </div>
+            </div>
+        </div>
+        <!-- End block content -->
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color darken-3 pt-4 ">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+
+                    <!-- Video -->
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hSBpAN_10gQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-12 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish2.png" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish3.png" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish15.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-12 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish13.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish14.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish6.png" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Form -->
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                            aria-label="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
+                    <!-- Form -->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Your email"
+                            aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign
+                                up</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://cr7fans1009.blogspot.com/">LINHCR7.COM</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!--<button class="position-button-call"><a href="">CALL</a></button>-->
+    <a href="https://www.facebook.com/" class="position-button-call1" role="button" aria-pressed="true">
+        <img src="../assets/img/logo-icon/icon-facebook-zoom.gif" alt="HTML tutorial"
+            style="width:80px;height:80px;border:0;border-radius:80px "></a>
+    <a href="https://www.google.com.vn/" target="_blank" class=" position-button-call2" role="button"
+        aria-pressed="true">
+        <img src="../assets/img/logo-icon/icon-google.gif" alt="HTML tutorial"
+            style="width:80px;height:80px;border:0;border-radius:80px ">
+    </a>
+
+    <script src="../assets/js/menu-js.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

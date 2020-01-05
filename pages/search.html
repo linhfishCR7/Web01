@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SEARCH</title>
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="../assets/img/logo-icon/icon.jpg" type="text/css">
+    <link rel="stylesheet" href="../vendor/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/Bootstrap.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<style>
+    /*div{
+        border: 1px solid red;
+    }*/
+    body {
+        background-image: url('../assets/img/background/background9.jpg');
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+
+    .logo-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .banner-img {
+        height: 200px;
+
+    }
+
+
+    .card-img {
+        height: 250px;
+    }
+
+    .icon-font {
+        size: 80px;
+        color: brown;
+    }
+
+    .animate-text {
+        color: rgb(138, 9, 230);
+    }
+
+    h2 {
+        color: lawngreen;
+    }
+
+    .position-button-call1 {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px 80px 80px 80px;
+        position: fixed;
+        top: 100px;
+        left: 30px;
+
+
+    }
+
+    .position-button-call1 a {
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .position-button-call2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px 80px 80px 80px;
+        position: fixed;
+        top: 180px;
+        left: 30px;
+
+    }
+
+    .position-button-call2 a {
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    .phone-icon {
+        color: blue;
+        size: 100px;
+    }
+
+    .navbar-position {
+        position: fixed;
+    }
+
+    .row-banner-text {
+        color: blueviolet;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .row-banner-text-danhmuc {
+
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    .banner-img {
+        width: 1000px;
+        height: 150px;
+    }
+
+    .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+        position: fixed;
+    }
+
+    .top-contact {
+        margin-top: 100px;
+    }
+
+
+    img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+
+    .img-size {
+        width: 350px;
+        height: 250px;
+    }
+    .search{
+        padding-top: 50px;
+    }
+</style>
+
+<body>
+    <!-- thanh navbar -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark affix">
+        <a class="navbar-brand" href="https://cr7fans1009.blogspot.com/">CR7</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/gioi-thieu.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../pages/San-pham.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sản phẩm
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../pages/pages-product/San-pham-THUC_AN.html">Thức ăn</a>
+                        <a class="dropdown-item" href="../pages/pages-product/San-pham-VOT.html">Vợt</a>
+                        <a class="dropdown-item" href="../pages/pages-product/San-pham-BE.html">Bể</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"
+                            href="../pages/pages-product/pages-product-betta/San-pham-BETA-KOI1.html">BETTA</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="../pages/contact.html" tabindex="-1" aria-disabled="true">Liên hệ</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" method="get" action="../pages/search.html">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="../pages/cart.html">Giỏ hàng</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <!-- Nếu chưa đăng nhập thì hiển thị nút Đăng nhập -->
+                    <a class="nav-link" href="../pages/Sing-in.html">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <div class="container mt-4">
+            <form name="frmTimKiem" method="get" action="search.html">
+                <h1 class="text-center search">Tìm kiếm sản phẩm</h1>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <h5 class="text-center">Cửa hàng bán cá betta và các phụ kiện đi kèm
+                        </h5>
+                        <h5 class="text-center">Giúp các bạn thỏa sức đam mê, sáng tạo và có thể trở thành nhà kinh doanh cá betta cực khủng</h5>
+                        <div class="text-center">
+                            <button type="button" id="btnReset" class="btn btn-warning">Xóa bộ lọc</button>
+                            <button class="btn btn-primary btn-lg">Tìm kiếm <i class="fa fa-forward"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <aside class="col-sm-4">
+                        <p>Bộ lọc </p>
+                        <div class="card">
+                            <!-- Tìm kiếm theo tên sản phẩm -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Tên sản phẩm </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <input class="form-control" type="text" placeholder="Tìm kiếm"
+                                            aria-label="Search" name="keyword_tensanpham" value="">
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo Tên sản phẩm -->
+
+                            <!-- Tìm kiếm theo Loại sản phẩm -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Loại sản phẩm </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">3</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="1" id="chk-loaisanpham-1">
+                                            <label class="custom-control-label" for="chk-loaisanpham-1">
+                                                Thức ăn</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">1</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="2" id="chk-loaisanpham-2">
+                                            <label class="custom-control-label" for="chk-loaisanpham-2">Bể</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">4</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="3" id="chk-loaisanpham-3">
+                                            <label class="custom-control-label" for="chk-loaisanpham-3">
+                                                Vợt</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">1</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_loaisanpham[]" value="4" id="chk-loaisanpham-4">
+                                            <label class="custom-control-label" for="chk-loaisanpham-4">BETTA</label>
+                                        </div> <!-- form-check.// -->
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo Loại sản phẩm -->
+
+                            <!-- Tìm kiếm theo Nhà sản xuất -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Nhà sản xuất </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">3</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_nhasanxuat[]" value="1" id="chk-nhasanxuat-1">
+                                            <label class="custom-control-label" for="chk-nhasanxuat-1">Việt Nam</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">3</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_nhasanxuat[]" value="2" id="chk-nhasanxuat-2">
+                                            <label class="custom-control-label" for="chk-nhasanxuat-2">Nhật Bản</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">1</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_nhasanxuat[]" value="3" id="chk-nhasanxuat-3">
+                                            <label class="custom-control-label" for="chk-nhasanxuat-3">Trung Quốc</label>
+                                        </div> <!-- form-check.// -->
+                                        <div class="custom-control custom-checkbox">
+                                            <span class="float-right badge badge-light round">1</span>
+                                            <input type="checkbox" class="custom-control-input"
+                                                name="keyword_nhasanxuat[]" value="4" id="chk-nhasanxuat-4">
+                                            <label class="custom-control-label" for="chk-nhasanxuat-4">Campuchia</label>
+                                        </div> <!-- form-check.// -->
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo Nhà sản xuất -->
+
+                            <!-- Tìm kiếm theo Khuyến mãi -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Khuyến mãi </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo Nhà sản xuất -->
+
+                            <!-- Tìm kiếm theo khoảng giá tiền -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Khoảng tiền </h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label>Từ</label>
+                                                <input type="range" class="custom-range" min="0" max="50000000"
+                                                    step="100000" id="sotientu" name="keyword_sotientu" value="0">
+                                                <span><span id="sotientu-text">0</span></span>
+                                            </div>
+                                            <div class="form-group col-md-6 text-right">
+                                                <label>Đến</label>
+                                                <input type="range" class="custom-range" min="0" max="50000000"
+                                                    step="100000" id="sotienden" name="keyword_sotienden"
+                                                    value="50000000">
+                                                <span><span id="sotienden-text">5.000.000</span></span>
+                                            </div>
+                                        </div>
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo khoảng giá tiền -->
+
+                            <!-- Tìm kiếm theo màu sắc sản phẩm -->
+                            <article class="card-group-item">
+                                <header class="card-header">
+                                    <h6 class="title">Màu sắc (tùy chọn thêm)</h6>
+                                </header>
+                                <div class="filter-content">
+                                    <div class="card-body">
+                                        <label class="btn btn-danger">
+                                            <input class="" type="checkbox" value="">
+                                            <span class="form-check-label">Đỏ</span>
+                                        </label>
+                                        <label class="btn btn-success">
+                                            <input class="" type="checkbox" value="">
+                                            <span class="form-check-label">Xanh lá</span>
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input class="" type="checkbox" value="">
+                                            <span class="form-check-label">Xanh dương</span>
+                                        </label>
+                                    </div> <!-- card-body.// -->
+                                </div>
+                            </article> <!-- // Tìm kiếm theo màu sắc sản phẩm -->
+                        </div> <!-- card.// -->
+                    </aside> <!-- col.// -->
+
+                    <!-- Giải thuật duyệt và render Danh sách sản phẩm theo dòng, cột của Bootstrap -->
+
+                    <div class="col-sm-8 mt-2">
+                        <!--row1 card-->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top card-img" src="../assets/img/betta/betafish4.png"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PENSY BETTA CAM</h5>
+                                        <p class="card-text">PENSY BETTA XANH là loại cá to và có sức sống rất tốt, màu
+                                            sắc đơn giản, trông rất khoet khoán và cơ bắp.</p>
+
+                                        <!--xem chi tiet-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-mid-6">
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-sm btn-outline-secondary"
+                                                            href="../pages/pages-product-detail/San-pham-detail-betta-1.html">Xem
+                                                            chi tiết</a>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-md-6 ">
+                                                    <small class="text-muted text-right">
+                                                        <s>150.000</s>
+                                                        <b>100.000vnđ</b>
+                                                    </small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--xem chi tiet-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-mid-6">
+                                                    <a href="cart.html" class="btn btn-primary"><i
+                                                            class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                                                </div>
+                                                <div class="w3hubs col-md-6 ">
+                                                    <input type="radio" name="star" id="star1"><label
+                                                        for="star1"></label>
+                                                    <input type="radio" name="star" id="star2"><label
+                                                        for="star2"></label>
+                                                    <input type="radio" name="star" id="star3"><label
+                                                        for="star3"></label>
+                                                    <input type="radio" name="star" id="star4"><label
+                                                        for="star4"></label>
+                                                    <input type="radio" name="star" id="star5"><label
+                                                        for="star5"></label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--col1 card-->
+
+                            <div class="col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top card-img" src="../assets/img/betta/betafish5.png"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PENSY BETTA XANH </h5>
+                                        <p class="card-text">PENSY BETTA XANH là loại cá to và có sức sống rất tốt, màu
+                                            sắc đơn giản, trông rất khoet khoán và cơ bắp.</p>
+                                        <!--xem chi tiet-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-mid-6">
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-sm btn-outline-secondary"
+                                                            href="../pages/pages-product-detail/San-pham-detail-betta-2.html">Xem
+                                                            chi tiết</a>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-md-6 ">
+                                                    <small class="text-muted text-right">
+                                                        <s>150.000</s>
+                                                        <b>100.000vnđ</b>
+                                                    </small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--xem chi tiet-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-mid-6">
+                                                    <a href="cart.html" class="btn btn-primary"><i
+                                                            class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                                                </div>
+                                                <div class="w3hubs col-md-6 ">
+                                                    <input type="radio" name="star" id="star1"><label
+                                                        for="star1"></label>
+                                                    <input type="radio" name="star" id="star2"><label
+                                                        for="star2"></label>
+                                                    <input type="radio" name="star" id="star3"><label
+                                                        for="star3"></label>
+                                                    <input type="radio" name="star" id="star4"><label
+                                                        for="star4"></label>
+                                                    <input type="radio" name="star" id="star5"><label
+                                                        for="star5"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--col2 card-->
+                            <div class="col-md-4">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top card-img" src="../assets/img/betta/betafish6.png"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PENSY BETTA MINI-CAM</h5>
+                                        <p class="card-text">PENSY BETTA MINI-TÍM là loại cá khá nhỏ nhưng có sức sống
+                                            rất tốt, màu sắc đơn giản, đặc biệt kì trên và dưới nhọn.</p>
+                                        <!--xem chi tiet-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-mid-6">
+                                                    <div class="btn-group">
+                                                        <a class="btn btn-sm btn-outline-secondary"
+                                                            href="../pages/pages-product-detail/San-pham-detail-betta-3.html">Xem
+                                                            chi tiết</a>
+                                                    </div>
+                                                </div>
+                                                <div class=" col-md-6 ">
+                                                    <small class="text-muted text-right">
+                                                        <s>150.000</s>
+                                                        <b>100.000vnđ</b>
+                                                    </small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--xem chi tiet-->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-mid-6">
+                                                    <a href="cart.html" class="btn btn-primary"><i
+                                                            class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                                                </div>
+                                                <div class="w3hubs col-md-6 ">
+                                                    <input type="radio" name="star" id="star1"><label
+                                                        for="star1"></label>
+                                                    <input type="radio" name="star" id="star2"><label
+                                                        for="star2"></label>
+                                                    <input type="radio" name="star" id="star3"><label
+                                                        for="star3"></label>
+                                                    <input type="radio" name="star" id="star4"><label
+                                                        for="star4"></label>
+                                                    <input type="radio" name="star" id="star5"><label
+                                                        for="star5"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--col3 card-->
+
+                            <!--row2 card-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top card-img" src="../assets/img/betta/betafish1.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">PENSY BETTA MINI-XANH</h5>
+                                            <p class="card-text">PENSY BETTA MINI-XANH là loại cá khá nhỏ nhưng có sức
+                                                sống
+                                                rất tốt, màu sắc đơn giản, phối hợp với nhau hòa quyện.</p>
+                                            <!--xem chi tiet-->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-mid-6">
+                                                        <div class="btn-group">
+                                                            <a class="btn btn-sm btn-outline-secondary"
+                                                                href="../pages/pages-product-detail/San-pham-detail-betta-4.html">Xem
+                                                                chi tiết</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-md-6 ">
+                                                        <small class="text-muted text-right">
+                                                            <s>150.000</s>
+                                                            <b>100.000vnđ</b>
+                                                        </small>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!--xem chi tiet-->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-mid-6">
+                                                        <a href="cart.html" class="btn btn-primary"><i
+                                                                class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="w3hubs col-md-6 ">
+                                                        <input type="radio" name="star" id="star1"><label
+                                                            for="star1"></label>
+                                                        <input type="radio" name="star" id="star2"><label
+                                                            for="star2"></label>
+                                                        <input type="radio" name="star" id="star3"><label
+                                                            for="star3"></label>
+                                                        <input type="radio" name="star" id="star4"><label
+                                                            for="star4"></label>
+                                                        <input type="radio" name="star" id="star5"><label
+                                                            for="star5"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--col1 card-->
+
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top card-img" src="../assets/img/betta/betafish2.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">PENSY BETTA MINI-TÍM</h5>
+                                            <p class="card-text">PENSY BETTA MINI-TÍM là loại cá khá nhỏ nhưng có sức
+                                                sống
+                                                rất tốt, màu sắc đơn giản, đặc biệt kì trên và dưới nhọn.</p>
+                                            <!--xem chi tiet-->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-mid-6">
+                                                        <div class="btn-group">
+                                                            <a class="btn btn-sm btn-outline-secondary"
+                                                                href="../pages/pages-product-detail/San-pham-detail-betta-5.html">Xem
+                                                                chi tiết</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-md-6 ">
+                                                        <small class="text-muted text-right">
+                                                            <s>150.000</s>
+                                                            <b>100.000vnđ</b>
+                                                        </small>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!--xem chi tiet-->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-mid-6">
+                                                        <a href="cart.html" class="btn btn-primary"><i
+                                                                class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="w3hubs col-md-6 ">
+                                                        <input type="radio" name="star" id="star1"><label
+                                                            for="star1"></label>
+                                                        <input type="radio" name="star" id="star2"><label
+                                                            for="star2"></label>
+                                                        <input type="radio" name="star" id="star3"><label
+                                                            for="star3"></label>
+                                                        <input type="radio" name="star" id="star4"><label
+                                                            for="star4"></label>
+                                                        <input type="radio" name="star" id="star5"><label
+                                                            for="star5"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--col2 card-->
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 18rem;">
+                                        <img class="card-img-top card-img" src="../assets/img/betta/betafish3.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">PENSY BETTA MINI-ĐỎ-XANH-TRẮNG</h5>
+                                            <p class="card-text">PENSY BETTA MINI-ĐỎ-XANH là loại cá khá nhỏ nhưng có
+                                                sức
+                                                sống rất tốt, màu sắc sặc sở.</p>
+                                            <!--xem chi tiet-->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-mid-6">
+                                                        <div class="btn-group">
+                                                            <a class="btn btn-sm btn-outline-secondary" href="../pages/pages-product-detail/San-pham-detail-betta-6.html">Xem
+                                                                chi tiết</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class=" col-md-6 ">
+                                                        <small class="text-muted text-right">
+                                                            <s>150.000</s>
+                                                            <b>100.000vnđ</b>
+                                                        </small>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!--xem chi tiet-->
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-mid-6">
+                                                        <a href="cart.html" class="btn btn-primary"><i
+                                                                class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="w3hubs col-md-6 ">
+                                                        <input type="radio" name="star" id="star1"><label
+                                                            for="star1"></label>
+                                                        <input type="radio" name="star" id="star2"><label
+                                                            for="star2"></label>
+                                                        <input type="radio" name="star" id="star3"><label
+                                                            for="star3"></label>
+                                                        <input type="radio" name="star" id="star4"><label
+                                                            for="star4"></label>
+                                                        <input type="radio" name="star" id="star5"><label
+                                                            for="star5"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--col3 card-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div> <!-- row.// -->
+            </form>
+        </div>
+        <!-- End block content -->
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color darken-3 pt-4 ">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+
+                    <!-- Video -->
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hSBpAN_10gQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+    </footer>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-12 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish2.png" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish3.png" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish15.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-12 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish13.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish14.jpg" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <!--Image-->
+                    <div class="view overlay z-depth-1-half">
+                        <img src="../assets/img/betta/betafish6.png" class="img-fluid" alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Form -->
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                            aria-label="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
+                    <!-- Form -->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Your email"
+                            aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign
+                                up</button>
+                        </div>
+                    </form>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://cr7fans1009.blogspot.com/">LINHCR7.COM</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!--<button class="position-button-call"><a href="">CALL</a></button>-->
+    <a href="https://www.facebook.com/" class="position-button-call1" role="button" aria-pressed="true">
+        <img src="../assets/img/logo-icon/icon-facebook-zoom.gif" alt="HTML tutorial"
+            style="width:80px;height:80px;border:0;border-radius:80px "></a>
+    <a href="https://www.google.com.vn/" target="_blank" class=" position-button-call2" role="button"
+        aria-pressed="true">
+        <img src="../assets/img/logo-icon/icon-google.gif" alt="HTML tutorial"
+            style="width:80px;height:80px;border:0;border-radius:80px ">
+    </a>
+
+    <script src="../assets/js/menu-js.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
